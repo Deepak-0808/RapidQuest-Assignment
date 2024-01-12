@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+.mainContainer{
+    height: 100vh;
+    width: 100vw;
+   
+}
+
+.innerContainer{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+.sideNavBar{
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    
+  
+}
+
+.sideNavBarUpper{
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sideNavBarUpper1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sideNavBarUpper2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    border-radius: 8px;
+    justify-content: center;
+    background-color: #4935ff;
+    align-items: center;
+}
+#homeIcon{
+    width: 22px;
+    height: 22px;
+}
+
+.sideNavBarLower{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sideBarIcon{
+    width: 25px;
+    height: auto;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+
+.contentSection{
+    width: calc(100% - 50px);
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftSection{
+    width: 27%;
+    padding-top: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fafafa;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.profileImg{
+    margin-right: 20px;
+}
+
+.profilePic{
+    width: 80px;
+    border-radius: 50%;
+}
+
+.userName{
+    font-size: x-large;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.account{
+    margin-bottom: 40px;
+}
+
+.marginBottom{
+    margin-bottom: 15px;
+}
+
+.marginBottom5{
+    margin-bottom: 5px;
+}
+
+.today{
+    font-size: large;
+}
+
+.accountBalance{
+    font-size: x-large;
+    font-weight: bold;
+}
+.fadeColorAccount{
+    margin-bottom: 5px;
+    color: #9e9e9e;
+}
+
+.yearContribution{
+    font-weight: bold;
+}
+
+.totalIntrest{
+    font-weight: bold;
+}
+
+.selectBtn{
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    color: white;
+    background-color: #4935ff;
+}
+
+.recentTran{
+    font-size: medium;
+    font-weight: bold;
+}
+
+.dateClass{
+    margin-bottom: 5px;
+    color: #9e9e9e;
+}
+
+.tranLine{
+    background-color: #9e9e9e;
+    margin-top: 15px;
+}
+.tranFadeLine{
+    border-bottom: 1px solid #dfdcdc;
+}
+
+
+
+
+
+
+
+/* Middle Section */
+
+.middleSection{
+    width: 46%;
+    padding-top: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: white;
+}
+
+.marginBottom40{
+    margin-bottom: 40px;
+}
+.retirement{
+    font-weight: bold;
+    color: #4935ff;
+}
+
+.starting{
+    font-size: x-large;
+}
+
+.earningGoal{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.earningGoal div{
+    flex: 1;
+    margin-right: 20px;
+}
+.earningGoal div:last-child {
+    margin-right: 0px;
+  }
+
+.earningLine{
+    border-bottom: 1px solid #4935ff;
+}
+
+.percentMainContainer{
+    display: flex;
+    margin-top: 10px;
+}
+
+.percentInnerContainer1{
+    margin-top: 20px;
+    width: 40%;
+}
+.percentFadeLine{
+    width: 70%;
+    border-bottom: 1px solid #dfdcdc;
+}
+.percentInnerContainer2{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+.percentSelect{
+    border: none;
+    outline: none;
+}
+
+.pieChart{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pieChart div{
+    margin-top: 5px;
+    font-size: medium;
+}
+
+
+
+
+
+
+
+/* Right Section */
+
+
+.rightSection{
+    width: 27%;
+    padding-top: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: white;
+}
+
+.rightSectionUpper{
+    background-color: #fafafa;
+    padding: 20px;
+}
+
+.flexBox{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+.rightSectionLineGraph {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .line-container {
+    position: relative;
+    width: 80%; 
+  }
+
+  .line {
+    width: 100%;
+    height: 5px; 
+    background-color: #ededed; 
+  }
+
+  .percentage-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 60%;
+    background-color: #92b8fe;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+  }
+
+  .updateBtn{
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    background-color: #4935ff;
+    color: white;
+
+  }
+
+  .help{
+    display: flex;
+    justify-content: center;
+    color: #4935ff;
+  }
+
+  .viewMore{
+    width: 10px;
+    height: auto;
+  }
+
+  .rightSectionLower{
+    display: flex;
+  }
+
+  .rightSectionLowerLine{
+    border-left: 1px solid #4935ff;
+    margin-right: 15px;
+  }
+
+  .learnMore{
+    color: #4935ff;
+  }
+
+  #sideNavBar2{
+    display: none;
+  }
+
+
+
+  /* Responsiveness for Mobile screen */
+
+  @media screen and (max-width: 500px){
+    
+
+  }

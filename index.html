@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RapidQuest</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="mainContainer">
+        <div class="innerContainer">
+            <section id="sideNavBar1" class="sideNavBar">
+                <div class="sideNavBarUpper">
+                    <div class="sideNavBarUpper1">
+                        <img class="sideBarIcon" src="./Img/Icons/butterfly.svg" alt="">
+                        <img class="sideBarIcon" src="./Img/Icons/search.svg" alt="">
+                    </div>
+                    <div class="sideNavBarUpper2">
+                        <div class="home">
+                            <img id="homeIcon" class="sideBarIcon" src="./Img/Icons/home.svg" alt="">
+                        </div>
+                        <img class="sideBarIcon" src="./Img/Icons/menu2.svg" alt="">
+                        <img class="sideBarIcon" src="./Img/Icons/menu.svg" alt="">
+                        <img class="sideBarIcon" src="./Img/Icons/profile.svg" alt="">
+                    </div>
+                </div>
+                <div class="sideNavBarLower">
+                    <img class="sideBarIcon" src="./Img/Icons/notification.svg" alt="">
+                    <img class="sideBarIcon" src="./Img/Icons/exit.svg" alt="">
+                </div>
+            </section>
+
+            <section class="contentSection">
+                
+                <!-- left section -->
+                <section class="leftSection">
+                    <div class="profile">
+                        <div class="profileImg">
+                            <img class="profilePic" src="./Img/pic/profilePic.png" alt="img">
+                        </div>
+                        <div class="profileName">
+                            <div class="userName">Hi Mike,</div>
+                            <div>welcome back</div>
+                        </div>
+                    </div>
+                    <div class="account">
+                        <div class="marginBottom today">Today</div>
+                        <div class="marginBottom">
+                            <div class="accountBalance">$19,892</div>
+                            <div class="fadeColorAccount">Account Balance</div>
+                        </div>
+                        <div class="marginBottom">
+                            <div class="yearContribution">$4,000</div>
+                            <div class="fadeColorAccount">Year-to-Date Contributions</div>
+                        </div>
+                        <div class="marginBottom">
+                            <div class="totalIntrest">$1,892</div>
+                            <div class="fadeColorAccount">Total Intrest</div>
+                        </div>
+                        <div class="marginBottom">
+                            <select class="selectBtn" name="" id=""> 
+                                <option value="">I want to</option>
+                                <option value="">Aarav</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="transactions">
+                        <div class="marginBottom recentTran">Recent Transactions</div>
+                        <div class="marginBottom">
+                            <div class="dateClass">2020-08-07</div>
+                            <div>Withdrawal Transfer to Bank-xxx11</div>
+                            <div class="tranLine tranFadeLine"></div>
+                        </div>
+                        <div class="marginBottom">
+                            <div class="dateClass">2020-07-21</div>
+                            <div>Withdrawal Transfer to Bank-xxx11</div>
+                            <div class="tranLine tranFadeLine"></div>
+                        </div>
+                        <div class="marginBottom">
+                            <div class="dateClass">2020-07-16</div>
+                            <div>Withdrawal Transfer to Bank-xxx11</div>
+                            <div class="tranLine tranFadeLine"></div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Middle Section -->
+                <section class="middleSection">
+                    <div class="marginBottom40">
+                        <div class="retirement marginBottom5">Retirement Income</div>
+                        <div class="starting">Starting Year 2056</div>
+                    </div>
+                    <div class="marginBottom40 earningGoal">
+                        <div>
+                            <h3 class="marginBottom5">$300,000</h3>
+                            <div class="marginBottom5 fadeColorAccount">My Goal</div>
+                            <div class="earningLine"></div>
+                        </div>
+                        <div>
+                            <h3 class="marginBottom5">59%</h3>
+                            <div class="marginBottom5 fadeColorAccount">Goal Achieved</div>
+                            <div class="earningLine"></div>
+                        </div>
+                        <div class="earningGoalLast">
+                            <h3 class="marginBottom5">$300</h3>
+                            <div class="marginBottom5 fadeColorAccount">Est. Monthly Income</div>
+                            <div class="earningLine"></div>
+                        </div>
+                    </div>
+                    <div class="marginBottom40">
+                        <div class="recentTran">Contributions Overtime</div>
+                        <div class="lineGraph">
+                            <canvas id="contributionChart" width="100%" height="50px"></canvas>
+                        </div>
+                    </div>
+                    <div class="marginBottom40">
+                        <div>
+                            <div class="recentTran marginBottom5">How do I compare to my peers?</div>
+                            <div class="marginBottom5 fadeColorAccount">These numbers represent current goal achievement</div>
+                        </div>
+                        <div class="percentMainContainer">
+                            <div class="percentInnerContainer1">
+                                <div class="marginBottom5">
+                                    Age: 
+                                    <select class="percentSelect" name="" id="">
+                                        <option value="">Under 30</option>
+                                        <option value="">Under 20</option>
+                                    </select>
+                                </div>
+                                <div class="marginBottom5 percentFadeLine"></div>
+                                <div class="marginBottom5">
+                                    Salary:
+                                    <select class="percentSelect" name="" id="">
+                                        <option value="">k20 - k30</option>
+                                        <option value="">k30 - k50</option>
+                                    </select>
+                                </div>
+                                <div class="marginBottom5 percentFadeLine"></div>
+                                <div class="marginBottom5">
+                                    Gender:
+                                    <select class="percentSelect" name="" id="">
+                                        <option value="">Male</option>
+                                        <option value="">Female</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class=" percentInnerContainer2 percentageGraph">
+                                <div class="pieChart">
+                                    <canvas id="averageChart"></canvas>
+                                    <div>Average</div>
+                                </div>
+    
+                                <div class="pieChart">
+                                    <canvas id="topChart"></canvas>
+                                    <div>Top</div>
+                                </div>
+    
+                                <div class="pieChart">
+                                    <canvas id="yourChart"></canvas>
+                                    <div>Me</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </section>
+
+                <!-- right section -->
+                <section class="rightSection">
+                    <div class="rightSectionUpper marginBottom">
+                        <h4 class="marginBottom">Retirement Strategy</h4>
+                        <div class="marginBottom">Employee Contribution</div>
+                        <div class="marginBottom rightSectionLineGraph">
+                            <div class="line-container">
+                                <div class="line"></div>
+                                <div>
+                                    <div class="percentage-overlay"></div>
+                                </div>
+                            </div>
+                            <div>60%</div>
+                        </div>
+                        <div class="marginBottom">Retirement Age</div>
+                        <div class="marginBottom rightSectionLineGraph">
+                            <div class="line-container">
+                                <div class="line"></div>
+                                <div>
+                                    <div class="percentage-overlay"></div>
+                                </div>
+                            </div>
+                            <div>60</div>
+                        </div>
+                        <div class="tranFadeLine marginBottom"></div>
+                        <div class="marginBottom flexBox">
+                            <div>Employer Contribution</div>
+                            <div>8.4%</div>
+                        </div>
+                        <div class="marginBottom flexBox">
+                            <div>Intrest Rate</div>
+                            <div>5%</div>
+                        </div>
+                        <div class="marginBottom">
+                            <button class="updateBtn">Update</button>
+                        </div>
+                        <div class="help">
+                            <div>
+                                View Help Docs <img class="viewMore" src="./Img/Icons/view.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rightSectionLower">
+                        <div class="rightSectionLowerLine" ></div>
+                        <div>
+                            <div class="marginBottom5">Are you considering a</div>
+                            <h4 class="marginBottom5">Housing Advance?</h4>
+                            <div class="marginBottom5 fadeColorAccount">Limited time reduced interest.</div>
+                            <div class="marginBottom5 learnMore">Learn more 
+                                <img class="viewMore" src="./Img/Icons/view.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </section>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
